@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import styles from './navbar.module.css'
 import ToggleMenu from './Toggle/ToggleMenu'
+import { ReactComponent as Close } from '../../assets/icons/close.svg'
+import { Box } from '@mui/system'
+
 const Navbar = () => {
   const [show, setShow] = useState(false)
   const activeStyle = ({ isActive }) => {
@@ -37,10 +40,15 @@ const Navbar = () => {
       {!show ? (
         <div onClick={() => setShow(!show)} className={styles.header__toggle}>
           <div className={styles.header__toggle_item}></div>
+          <div className={styles.header__toggle_item}></div>
         </div>
       ) : (
-        <ToggleMenu changeVisible={setShow} />
+        <Close
+          onClick={() => setShow(false)}
+          className={styles.header__toggle_close}
+        />
       )}
+      {show && <ToggleMenu changeVisible={setShow} />}
     </header>
   )
 }

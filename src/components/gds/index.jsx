@@ -1,0 +1,5 @@
+export {default as Mebel} from './Mebel'
+export {default as Dveri} from './Dveri'
+export {default as Lesnitsa} from './Lesnitsa'
+export {default as MebelFasad} from './MebelFasad'
+export {default as Buazeri} from './Buazeri'

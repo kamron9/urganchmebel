@@ -1,8 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+:root{
+  orange: #a9845c;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 35px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(113, 70, 27, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(62, 39, 16, 0.7);
+}
+
+.filtered-img {
+  border-radius: 12px;
+  filter: brightness(50%);
+}
+.primary__btn {
+  color: #fff;
+  background: #a9845c;
+  padding: 7px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+.primary__btn:hover{
+  background: #7c5e42;
+}
+.css-1wcljjh-MuiCardContent-root:last-child{
+  padding: 0;
 }

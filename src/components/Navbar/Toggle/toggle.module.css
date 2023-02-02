@@ -1,17 +1,25 @@
 .toggleWrap {
   position: fixed;
   z-index: 9999;
-  top: 0;
-  right: 0;
+  top: 64px;
+  left: 0;
   cursor: pointer;
-  width: 310px;
+  width: 50%;
   height: 100vh;
   background: rgba(59, 57, 55, 0.9);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #fff;
 }
-.toggleWrap::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+@media screen and (min-width: 992px) {
+  .toggleWrap {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .toggleWrap {
+    width: 100%;
+  }
 }
