@@ -55,7 +55,7 @@ const Carousel = () => {
                 sm:'none'
             }
         }}>
-            <AliceCarousel mouseTracking autoPlay={true} items={items}/>
+            <AliceCarousel mouseTracking items={items}/>
         </Box>
     );
 };
