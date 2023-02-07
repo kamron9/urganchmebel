@@ -40,9 +40,7 @@ const Dveri = () => {
 
                   }}>
 
-                    <Box sx={{
-                      textAlign:'end'
-                    }}>
+                    <Box>
                       <button className={'primary__btn'}>buyurtma berish</button>
                     </Box>
                   </Box>
