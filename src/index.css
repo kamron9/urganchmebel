@@ -40,8 +40,9 @@
 .primary__btn {
   color: #fff;
   background: #a9845c;
-  padding: 7px 15px;
+  padding: 9px 15px;
   border-radius: 7px;
+  font-size: 19px;
   cursor: pointer;
   border: none;
   outline: none;

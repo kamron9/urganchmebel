@@ -28,7 +28,7 @@ const Dveri = () => {
                   </Typography>
                   <CardMedia
                       component="img"
-                      height="75%"
+                      height="70%"
                       image={url}
                       sx={{
                         objectFit:'contain',
