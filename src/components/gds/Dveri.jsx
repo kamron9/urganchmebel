@@ -2,11 +2,12 @@ import React from 'react'
 import  {data} from '../../mock'
 import {Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 const Dveri = () => {
-  return <Grid container spacing={2}>
+  return <Grid container spacing={4}>
 
     {
       data.map(({id,title,summa, url})=>(
-              <Grid item xs={12} sm={6} md={4} lg={3} sx={{
+              <Grid key={id} item xs={12} sm={6} md={4} lg={3} sx={{
+                height:'400px',
                 display:{
                   xs:'flex',
                   sm:'block',
@@ -16,7 +17,7 @@ const Dveri = () => {
                   xs:'center'
                 }
               }}>
-                <Card sx={{ maxWidth: 345, width:'100%', padding:'10px', boxShadow:'0 5px 15px 0 rgba(0,0,0,0.2)'}}>
+                <Card sx={{  width:'100%', height:'100%', padding:'10px', boxShadow:'0 5px 15px 0 rgba(0,0,0,0.2)',}}>
                   <Typography sx={{
                     textTransform:'capitalize'
                   }}>
@@ -27,7 +28,7 @@ const Dveri = () => {
                   </Typography>
                   <CardMedia
                       component="img"
-                      height="170px"
+                      height="75%"
                       image={url}
                       sx={{
                         objectFit:'contain',

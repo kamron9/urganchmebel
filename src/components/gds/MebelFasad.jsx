@@ -6,7 +6,7 @@ const MebelFasad = () => {
 
     {
       data.map(({id,title,summa, url})=>(
-          <Grid item xs={12} sm={6} md={4} lg={3} sx={{
+          <Grid key={id} item xs={12} sm={6} md={4} lg={3} sx={{
             display:{
               xs:'flex',
               sm:'block',
@@ -48,7 +48,6 @@ const MebelFasad = () => {
               </Card>
           </Grid>
           )
-
       )
 
     }

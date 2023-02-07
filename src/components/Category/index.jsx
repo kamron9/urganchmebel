@@ -3,6 +3,7 @@ import {Tab} from './TabStyle'
 import { Typography, Box} from "@mui/material";
 import {Mebel,Dveri, Lesnitsa, MebelFasad,Buazeri} from '../gds'
 const Category = () => {
+    const shadow = {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}
     const reducer = (state,action) =>{
         switch (action.type) {
             case 'dveri' : return {arg:'dveri'}
@@ -22,11 +23,11 @@ const Category = () => {
         <Box sx={{
             margin:'30px 0'
         }}>
-            <Tab onClick={()=>dispatch({type:'dveri'})} sx={state.arg === 'dveri' && {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}}>Межкомнатные двери</Tab>
-            <Tab onClick={()=>dispatch({type:'mebel'})} sx={state.arg === 'mebel' && {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}}>Мебель</Tab>
-            <Tab onClick={()=>dispatch({type:'buazeri'})} sx={state.arg === 'buazeri' && {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}}>Стеновые панели «Буазери» </Tab>
-            <Tab onClick={()=>dispatch({type:'lesnitsa'})} sx={state.arg === 'lesnitsa' && {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}}>Лестницы</Tab>
-            <Tab onClick={()=>dispatch({type:'fasad'})} sx={state.arg === 'fasad' && {boxShadow:'0 0 0 0.2rem rgba(169,132,92,.5)'}}>Мебельные фасады</Tab>
+            <Tab onClick={()=>dispatch({type:'dveri'})} sx={state.arg === 'dveri' && shadow}>Межкомнатные двери</Tab>
+            <Tab onClick={()=>dispatch({type:'mebel'})} sx={state.arg === 'mebel' && shadow}>Мебель</Tab>
+            <Tab onClick={()=>dispatch({type:'buazeri'})} sx={state.arg === 'buazeri' && shadow}>Стеновые панели «Буазери» </Tab>
+            <Tab onClick={()=>dispatch({type:'lesnitsa'})} sx={state.arg === 'lesnitsa' && shadow}>Лестницы</Tab>
+            <Tab onClick={()=>dispatch({type:'fasad'})} sx={state.arg === 'fasad' && shadow}>Мебельные фасады</Tab>
         </Box>
         <Box>
             {state.arg ==='dveri' && <Dveri/>}

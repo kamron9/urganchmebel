@@ -3,10 +3,9 @@ import  {data} from '../../mock'
 import {Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 const Mebel = () => {
   return  <Grid container spacing={2}>
-
     {
       data.map(({id,title,summa, url})=>(
-              <Grid item xs={12} sm={6} md={4} lg={3} sx={{
+              <Grid key={id} item xs={12} sm={6} md={4} lg={3} sx={{
                 display:{
                   xs:'flex',
                   sm:'block',
