@@ -35,6 +35,7 @@
 
 .filtered-img {
   border-radius: 12px;
+  object-fit: cover;
   filter: brightness(50%);
 }
 .primary__btn {

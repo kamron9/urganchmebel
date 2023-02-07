@@ -7,9 +7,9 @@ import ofisImg from '../../assets/images/ofis.jpg'
 const MainHeader = () => {
   return (
     <Grid container spacing={1}>
-      <Grid item xs={12} lg={8}>
+      <Grid className={'inner'} item xs={12} lg={8}>
         <Box sx={{ position: 'relative' }}>
-          <img src={sofaImg} width={'100%'} className='filtered-img' />
+          <img src={sofaImg} width={'100%'} style={{minHeight:"350px"}} className='filtered-img' />
           <Box
             sx={{
               position: 'absolute',
