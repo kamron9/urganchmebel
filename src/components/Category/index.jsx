@@ -19,7 +19,13 @@ const Category = () => {
     <Box sx={{
         marginTop:'70px'
     }}>
-        <Typography variant={'h3'}>Витрина товаров</Typography>
+        <Typography variant={'h3'} sx={{
+            fontSize:{
+                xs:'1.7rem',
+                sm:'2rem',
+                md:'2.4rem',
+            }
+        }}>Витрина товаров</Typography>
         <Box sx={{
             margin:'30px 0'
         }}>
