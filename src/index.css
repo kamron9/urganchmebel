@@ -35,10 +35,23 @@
 }
 
 .filtered-img {
+  height: 100%;
+  width: 100%;
   border-radius: 12px;
   object-fit: cover;
   filter: brightness(50%);
 }
+.support-img{
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+.card-img{
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
 .primary__btn {
   color: #fff;
   background: #a9845c;
@@ -53,11 +66,19 @@
 .primary__btn:hover{
   background: #7c5e42;
 }
+.title{
+  color:#3B3937;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
 .css-1wcljjh-MuiCardContent-root:last-child{
   padding: 0;
 }
-/*carousel*/
+.css-i4bv87-MuiSvgIcon-root{
+  fill: #a9845c !important;
+}
 
+/*carousel*/
 .alice-carousel__dots{
   display: flex;
   justify-content: center;
@@ -67,4 +88,22 @@
 }
 .alice-carousel__prev-btn,.alice-carousel__next-btn{
   display: none;
+}
+
+
+@media screen and (max-width: 899px){
+  .support-img{
+    max-height: 500px;
+    height: auto;
+  }
+  .title{
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 1050px){
+  .title{
+    font-size: 2.4rem;
+  }
 }

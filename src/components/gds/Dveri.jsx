@@ -5,7 +5,7 @@ const Dveri = () => {
   return <Grid container spacing={4}>
 
     {
-      data.map(({id,title,summa, url})=>(
+      data.slice(0,12).map(({id,title,summa, url})=>(
               <Grid key={id} item xs={12} sm={6} md={4} lg={3} sx={{
                 height:'400px',
                 display:{
@@ -26,13 +26,11 @@ const Dveri = () => {
                   <Typography fontWeight={'600'}>
                     {summa} so'm
                   </Typography>
-                  <CardMedia
-                      component="img"
-                      height="70%"
-                      image={url}
-                      sx={{
-                        objectFit:'contain',
-                      }}
+                  <img
+                      width={300}
+                      height={370}
+                      src={url}
+                      className='card-img'
                       alt="green iguana"
                   />
                   <Box sx={{

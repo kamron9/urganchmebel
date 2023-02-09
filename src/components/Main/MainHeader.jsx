@@ -9,13 +9,13 @@ const MainHeader = () => {
     <Grid sx={{
         display:{
             xs:'none',
-            sm:'block'
+            sm:'flex'
         }
     }
     } container spacing={1}>
       <Grid className={'inner'} item xs={12} lg={8}>
         <Box sx={{ position: 'relative' }}>
-          <img src={sofaImg} width={'100%'}  className='filtered-img' />
+          <img src={sofaImg} width={880} height={587}  className='filtered-img' />
           <Box
             sx={{
               position: 'absolute',
@@ -90,7 +90,8 @@ const MainHeader = () => {
           </Box>
           <img
             className='filtered-img'
-            width={'100%'}
+            width={435}
+            height={290}
             src={bedImg}
             alt='bed image'
             style={{ borderRadius: '12px' }}
@@ -125,7 +126,8 @@ const MainHeader = () => {
           </Box>
           <img
             className='filtered-img'
-            width={'100%'}
+            width={435}
+            height={290}
             src={ofisImg}
             alt='ofis image'
             style={{ borderRadius: '12px' }}
