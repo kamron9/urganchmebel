@@ -23,7 +23,7 @@ const MainHeader = () => {
               left: { xs: '15px', sm: '50px' },
             }}
           >
-            <Typography color={'#979494'}>urganch mebelda</Typography>
+            <Typography color={'#979494'}>Sofia mebel</Typography>
             <Typography
               variant='h4'
               color={'var(--white-color)'}

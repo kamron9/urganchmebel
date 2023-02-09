@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <Link className={styles.header__logo} to={'/'}>
-        Urganch Mebel
+        Sofia Mebel
       </Link>
       <nav>
         <NavLink

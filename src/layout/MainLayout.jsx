@@ -1,6 +1,8 @@
 import { Box } from '@mui/system'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
+import Footer from "../components/Footer/Footer";
+
 
 const MainLayout = () => {
   return (
@@ -24,7 +26,7 @@ const MainLayout = () => {
           <Outlet />
         </Box>
       </main>
-      <footer>footer</footer>
+     <Footer/>
     </>
   )
 }
