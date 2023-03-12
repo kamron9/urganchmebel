@@ -51,7 +51,10 @@
   height: 70%;
   object-fit: contain;
 }
-
+.modal-img{
+  width: 40%;
+  height: auto;
+}
 .primary__btn {
   color: #fff;
   background: #a9845c;
@@ -65,6 +68,16 @@
 }
 .primary__btn:hover{
   background: #7c5e42;
+}
+.primary__btn:disabled{
+  background: rgba(169, 132, 92, 0.2);
+  cursor: not-allowed;
+
+}
+/*modal btn*/
+.modal-btn{
+  width: 100%;
+  margin-top: 15px;
 }
 .title{
   color:#3B3937;
@@ -101,9 +114,9 @@
   }
 }
 
-
 @media screen and (max-width: 1050px){
   .title{
     font-size: 2.4rem;
   }
 }
+
